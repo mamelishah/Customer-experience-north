@@ -1,0 +1,10 @@
+.footer {
+  background-color: #3a3434;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.footer_info {
+  display: flex;
+  flex-direction: row;
+}
