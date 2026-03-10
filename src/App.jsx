@@ -1,5 +1,6 @@
 import "./App.css";
 import Footer from "../footer";
+import Produkt from "../produkt";
 function App() {
   return (
     <>
