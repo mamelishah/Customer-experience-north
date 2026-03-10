@@ -4,22 +4,22 @@ export default function Footer({}) {
       <footer className="footer">
         <section className="signup">
           <h2>Tilmed dig og få besked, når vi får nyt strik på lager</h2>
-          <button>Sign up</button>
+          <button className="signupKnap">Sign up</button>
         </section>
         <div className="footer_info">
-          <section className="kontakt">
+          <section>
             <h3>Kontakt os</h3>
             <p>27 24 30 04</p>
             <p>Support@north.com</p>
             <p>Søndervang 30 8260, Viby J</p>
           </section>
-          <section className="om-os">
+          <section>
             <h3>Om os</h3>
             <p>Sælg dit strik</p>
             <p>Virksomhedsinfo</p>
             <p>Bæredygtighed</p>
           </section>
-          <section className="Hjalp">
+          <section>
             <h3>Hjælp</h3>
             <p>Returnering</p>
             <p>Tracking page</p>
