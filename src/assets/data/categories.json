@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Bukser",
+    "image": "/images/categories/bukser-1.jpg",
+    "layout": "large-left"
+  },
+  {
+    "id": 2,
+    "title": "Buks",
+    "image": "/images/categories/bukser-2.jpg",
+    "layout": "top-middle"
+  },
+  {
+    "id": 3,
+    "title": "Buks",
+    "image": "/images/categories/bukser-3.jpg",
+    "layout": "top-right"
+  },
+  {
+    "id": 4,
+    "title": "Bukser",
+    "image": "/images/categories/bukser-4.jpg",
+    "layout": "bottom-wide"
+  }
+]

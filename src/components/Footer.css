@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    margin: 0;
+    background: #efefef;
+}
+
+.footer__inner {
+    width: 100%;
+    background: #403736;
+    color: #f5f1ee;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 56px;
+    padding: 28px 72px 20px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column--newsletter {
+    max-width: 360px;
+}
+
+.footer__eyebrow {
+    margin: 0 0 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__heading {
+    margin: 0 0 18px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.footer__title {
+    margin: 0 0 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.footer__subtitle {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__text,
+.footer__link {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.35;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__button {
+    width: 270px;
+    max-width: 100%;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    background: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+}
+
+.footer__button:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 1100px) {
+    .footer__inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 28px 32px 24px;
+    }
+}
+
+@media (max-width: 680px) {
+    .footer {
+        padding: 16px;
+    }
+
+    .footer__inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 24px 20px;
+    }
+
+    .footer__button {
+        width: 100%;
+    }
+}
