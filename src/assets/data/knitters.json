@@ -3,49 +3,49 @@
     "id": 1,
     "name": "Emilie Jensen",
     "age": 26,
-    "image": "/images/knitters/knitter-4.png",
+    "image": "images/knitters/knitter-4.png",
     "linkText": "Se mere fra Emilie her"
   },
   {
     "id": 2,
     "name": "Sofie Madsen",
     "age": 31,
-    "image": "/images/knitters/knitter-3.png",
+    "image": "images/knitters/knitter-3.png",
     "linkText": "Se mere fra Sofie her"
   },
   {
     "id": 3,
     "name": "Mikkel Andersen",
     "age": 29,
-    "image": "/images/knitters/knitter-2.png",
+    "image": "images/knitters/knitter-2.png",
     "linkText": "Se mere fra Mikkel her"
   },
   {
     "id": 4,
     "name": "Ida Larsen",
     "age": 24,
-    "image": "/images/knitters/knitter-1.png",
+    "image": "images/knitters/knitter-1.png",
     "linkText": "Se mere fra Ida her"
   },
   {
     "id": 5,
     "name": "Freja Nielsen",
     "age": 27,
-    "image": "/images/knitters/knitter-5.png",
+    "image": "images/knitters/knitter-5.png",
     "linkText": "Se mere fra Freja her"
   },
   {
     "id": 6,
     "name": "Anna Holm",
     "age": 30,
-    "image": "/images/knitters/knitter-6.png",
+    "image": "images/knitters/knitter-6.png",
     "linkText": "Se mere fra Anna her"
   },
   {
     "id": 7,
     "name": "Laura Kristensen",
     "age": 25,
-    "image": "/images/knitters/knitter-7.png",
+    "image": "images/knitters/knitter-7.png",
     "linkText": "Se mere fra Laura her"
   }
 ]

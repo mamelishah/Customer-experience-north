@@ -35,9 +35,8 @@ function HeroSection() {
 
           <div className="hero-text-box">
             <h1 className="hero-title">
-              Udforsk den nyeste
-              <br />
-              forårs kollektion
+              Find alt
+              <br />i hjemmestrik her
             </h1>
 
             <Link className="hero-button" to="/produkt-oversigt">

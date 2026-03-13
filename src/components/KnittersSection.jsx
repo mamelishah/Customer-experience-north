@@ -15,7 +15,7 @@ function KnittersSection() {
             aria-label={`${oneKnitter.name}, ${oneKnitter.age} år. ${oneKnitter.linkText}`}
           >
             <img
-              src={oneKnitter.image}
+              src={`${import.meta.env.BASE_URL}${oneKnitter.image}`}
               alt={oneKnitter.name}
               className="knit-image"
             />
