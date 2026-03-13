@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "name": "Cardigan med knapper",
+    "price": "349.99 kr.",
+    "image": "https://images.unsplash.com/photo-1670080514836-2a007ec86f6a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "En klassisk cardigan med knapper, perfekt for kølige dage.",
+    "category": "Trøjer",
+    "strikker": "Emilie Jensen",
+    "color": "Hvid"
+  },
+
+  {
+    "id": 2,
+    "name": "Rib uld vest",
+    "price": "299.99 kr.",
+    "image": "https://i.pinimg.com/1200x/44/9f/9d/449f9dde520dac82081162882cdb0e2a.jpg",
+    "description": "En stilfuld rib uld vest, ideel til lag-på-lag outfits.",
+    "category": "Veste",
+    "strikker": "Maria Hansen",
+    "color": "Grøn"
+  },
+
+  {
+    "id": 3,
+    "name": "Sweater med mønster",
+    "price": "495.00 kr.",
+    "image": "https://images.unsplash.com/photo-1771736821210-d3582c3ec870?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "En smuk sweater med et unikt mønster, der skiller sig ud.",
+    "category": "Trøjer",
+    "strikker": "Signe Conradsen",
+    "color": "hvid"
+  },
+
+  {
+    "id": 4,
+    "name": "Rib turtleneck sweater",
+    "price": 549.0,
+    "image": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "den perfekte turtlenech til kolde vinter aftner, i en flot creme hvid",
+    "categor": "sweater",
+    "strikker": "Emilie Jensen",
+    "color": "hvid"
+  },
+
+  {
+    "id": 5,
+    "name": "Kjole med struktur",
+    "price": "499,95 kr.",
+    "image": "https://plus.unsplash.com/premium_photo-1726098115160-ef8049665c0d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "En elegant kjole med en smuk struktur, perfekt til festlige lejligheder.",
+    "category": "Kjoler",
+    "strikker": "Mogens Nielsen",
+    "color": "Blå"
+  },
+
+  {
+    "id": 6,
+    "name": "Strikket halstørklæde",
+    "price": "129,95 kr.",
+    "image": "https://images.unsplash.com/photo-1667583914606-22626e11118c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Et varmt og blødt strikket halstørklæde, perfekt til vinteren.",
+    "category": "Accessories",
+    "strikker": "Maja Mogensen",
+    "color": "Hvid"
+  },
+
+  {
+    "id": 7,
+    "name": "Strikket hue",
+    "price": "129,99 kr.",
+    "image": "https://plus.unsplash.com/premium_photo-1695603437643-589798ae65f7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "En varm og stilfuld strikket hue, perfekt til kolde dage.",
+    "category": "Accessories",
+    "strikker": "Mogens Nielsen",
+    "color": "Gul"
+  },
+
+  {
+    "id": 8,
+    "name": "Strikket cardigan",
+    "price": "249,99 kr.",
+    "image": "https://images.unsplash.com/photo-1610288311735-39b7facbd095?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "En blød og behagelig strikket cardigan, perfekt til lag-på-lag outfits.",
+    "category": "Cardigan",
+    "strikker": "Camilla Mogensen",
+    "color": "Gul"
+  },
+
+  {
+    "id": 9,
+    "name": "Strikket sweater med stuktur",
+    "price": "399,99 kr.",
+    "image": "https://images.unsplash.com/photo-1687275159654-13e292177bfc?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "En varm og stilfuld strikket sweater, perfekt til kolde dage.",
+    "category": "Sweater",
+    "strikker": "Emilie Jensen",
+    "color": "Lilla"
+  },
+
+  {
+    "id": 10,
+    "name": "Turtleneck med struktur",
+    "price": "399,99 kr.",
+    "image": "https://plus.unsplash.com/premium_photo-1707816501025-2eb27f10b427?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Sød og stilfuld turtleneck med et flot mønster og striber.",
+    "category": "Sweater",
+    "strikker": "Maria Hansen",
+    "color": "Multi"
+  },
+
+  {
+    "id": 11,
+    "name": "Uld sokker",
+    "price": "149,99 kr.",
+    "image": "https://images.unsplash.com/photo-1730449322472-2b63d1107357?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Lækre, varme, hjemmestrikkede uld sokker.",
+    "category": "Strømper",
+    "strikker": "Signe Conradsen",
+    "color": "Multi"
+  },
+
+  {
+    "id": 12,
+    "name": "Multi-color cardigan",
+    "price": "329 kr.",
+    "image": "https://plus.unsplash.com/premium_photo-1726098115162-456ab9b1c8b4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Unik cardigan med masser af farver, fantasktisk til forår eller sommer.",
+    "category": "Cardigan",
+    "strikker": "Maja Mogensen",
+    "color": "Multi"
+  },
+
+  {
+    "id": 13,
+    "name": "rød vest",
+    "price": 249.95,
+    "image": "https://fas-bee.com/cdn/shop/files/L04772EW01504_016.jpg?v=1731445081&width=640",
+    "description": "en rød sweater vest til skaber et akademisk look",
+    "category": "vest",
+    "strikker": "Maria Hansen",
+    "color": "rød"
+  },
+
+  {
+    "id": 14,
+    "name": "Sweater med blomster",
+    "price": 359,
+    "image": "https://images.unsplash.com/photo-1651415315974-a461ea746ed0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "en hvid bedstemor sweater men blomster ned af midten",
+    "category": "sweater",
+    "strikker": "Signe Conradsen",
+    "color": "hvid"
+  }
+]
