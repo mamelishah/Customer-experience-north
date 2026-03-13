@@ -1,38 +1,5 @@
 import "./CategoriesMegaMenu.css";
 
-const categoryGroups = [
-  {
-    id: "toj",
-    title: "Tøj",
-    items: [
-      { label: "Top", icon: "top" },
-      { label: "Vest", icon: "vest" },
-      { label: "Nederdel", icon: "skirt" },
-      { label: "Sweater", icon: "sweater" },
-      { label: "Cardigan", icon: "cardigan" },
-      { label: "Bukser", icon: "pants" },
-      { label: "T-shirt", icon: "tshirt" },
-      { label: "Kjole", icon: "dress" },
-      { label: "Slipover", icon: "vest" },
-    ],
-    viewAll: "Se alt",
-  },
-  {
-    id: "accessory",
-    title: "Accessory",
-    items: [
-      { label: "Hue", icon: "beanie" },
-      { label: "Tasker", icon: "bag" },
-      { label: "Sokker", icon: "socks" },
-      { label: "Tørklæde", icon: "scarf" },
-      { label: "Vanter", icon: "gloves" },
-      { label: "Benvarmere", icon: "legwarmers" },
-      { label: "Halsedisse", icon: "neckwarmer" },
-    ],
-    viewAll: "Se alt",
-  },
-];
-
 function CategoryIcon({ type }) {
   switch (type) {
     case "top":
@@ -273,35 +240,140 @@ function CategoryIcon({ type }) {
 
 function CategoriesMegaMenu({ isOpen }) {
   return (
-    <div className={`categories-menu ${isOpen ? "is-open" : ""}`}>
-      <div className="categories-menu__panel">
-        <div className="categories-menu__grid">
-          {categoryGroups.map((group) => (
-            <section className="categories-menu__group" key={group.id}>
-              <h3 className="categories-menu__title">{group.title}</h3>
+    <div className={`menu-box ${isOpen ? "menu-open" : ""}`}>
+      <div className="menu-panel">
+        <div className="menu-grid">
+          <section className="menu-group">
+            <h3 className="menu-title">Tøj</h3>
 
-              <div className="categories-menu__links">
-                {group.items.map((item, index) => (
-                  <a
-                    href="#"
-                    className={`categories-menu__link ${
-                      index === group.items.length - 1 ? "is-last-item" : ""
-                    }`}
-                    key={item.label}
-                  >
-                    <span className="categories-menu__icon">
-                      <CategoryIcon type={item.icon} />
-                    </span>
-                    <span className="categories-menu__text">{item.label}</span>
-                  </a>
-                ))}
+            <div className="menu-links">
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="top" />
+                </span>
+                <span className="menu-text">Top</span>
+              </a>
 
-                <a href="#" className="categories-menu__view-all">
-                  {group.viewAll}
-                </a>
-              </div>
-            </section>
-          ))}
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="vest" />
+                </span>
+                <span className="menu-text">Vest</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="skirt" />
+                </span>
+                <span className="menu-text">Nederdel</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="sweater" />
+                </span>
+                <span className="menu-text">Sweater</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="cardigan" />
+                </span>
+                <span className="menu-text">Cardigan</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="pants" />
+                </span>
+                <span className="menu-text">Bukser</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="tshirt" />
+                </span>
+                <span className="menu-text">T-shirt</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="dress" />
+                </span>
+                <span className="menu-text">Kjole</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="vest" />
+                </span>
+                <span className="menu-text">Slipover</span>
+              </a>
+
+              <a href="#" className="menu-all-link">
+                Se alt
+              </a>
+            </div>
+          </section>
+
+          <section className="menu-group">
+            <h3 className="menu-title">Accessory</h3>
+
+            <div className="menu-links">
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="beanie" />
+                </span>
+                <span className="menu-text">Hue</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="bag" />
+                </span>
+                <span className="menu-text">Tasker</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="socks" />
+                </span>
+                <span className="menu-text">Sokker</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="scarf" />
+                </span>
+                <span className="menu-text">Tørklæde</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="gloves" />
+                </span>
+                <span className="menu-text">Vanter</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="legwarmers" />
+                </span>
+                <span className="menu-text">Benvarmere</span>
+              </a>
+
+              <a href="#" className="menu-link">
+                <span className="menu-icon">
+                  <CategoryIcon type="neckwarmer" />
+                </span>
+                <span className="menu-text">Halsedisse</span>
+              </a>
+
+              <a href="#" className="menu-all-link">
+                Se alt
+              </a>
+            </div>
+          </section>
         </div>
       </div>
     </div>

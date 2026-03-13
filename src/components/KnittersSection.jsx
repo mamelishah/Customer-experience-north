@@ -1,27 +1,27 @@
 import "./KnittersSection.css";
-import knitters from "../assets/data/knitters.json";
+import knitterList from "../assets/data/knitters.json";
 
 function KnittersSection() {
   return (
-    <section className="knitters-section">
-      <h2 className="knitters-section__title">Mød vores strikkere</h2>
+    <section className="knit-section-box">
+      <h2 className="knit-title">MØD VORES STRIKKERE</h2>
 
-      <div className="knitters-grid">
-        {knitters.map((knitter, index) => (
+      <div className="knit-grid">
+        {knitterList.map((oneKnitter, index) => (
           <a
-            key={knitter.id}
+            key={oneKnitter.id}
             href="#"
-            className={`knitter-circle knitter-circle--${index + 1}`}
-            aria-label={`${knitter.name}, ${knitter.age} år. ${knitter.linkText}`}
+            className={`knit-card knit-card-${index + 1}`}
+            aria-label={`${oneKnitter.name}, ${oneKnitter.age} år. ${oneKnitter.linkText}`}
           >
             <img
-              src={knitter.image}
-              alt={knitter.name}
-              className="knitter-circle__image"
+              src={oneKnitter.image}
+              alt={oneKnitter.name}
+              className="knit-image"
             />
 
-            <span className="knitter-circle__text">
-              {`${knitter.name}, ${knitter.age} år\n${knitter.linkText}`}
+            <span className="knit-text">
+              {`${oneKnitter.name}, ${oneKnitter.age} år\n${oneKnitter.linkText}`}
             </span>
           </a>
         ))}

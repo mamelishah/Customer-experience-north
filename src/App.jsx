@@ -1,21 +1,24 @@
-import Header from "./components/header";
-import HeroSection from "./components/heroSection";
-import NewsSection from "./components/newsSections";
-import CategoriesSection from "./components/CategoriesSection";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import KnittersSection from "./components/KnittersSection";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import ProductOverview from "./pages/ProductOverview";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
     <>
       <Header />
-      <HeroSection />
-      <NewsSection />
-      <CategoriesSection />
-      <KnittersSection />;
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/produkt-oversigt" element={<ProductOverview />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+      </Routes>
+
       <Footer />
     </>
-  );
   );
 }
 

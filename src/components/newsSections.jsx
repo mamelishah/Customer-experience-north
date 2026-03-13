@@ -1,10 +1,10 @@
 import { useRef } from "react";
-import "./newsSections.css";
+import "./NewsSections.css";
 
 import ProductCard from "./productCard";
-import products from "../assets/data/products.json";
+import productsList from "../assets/data/products.json";
 
-function ArrowLeftIcon() {
+function LeftArrowIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path
@@ -19,7 +19,7 @@ function ArrowLeftIcon() {
   );
 }
 
-function ArrowRightIcon() {
+function RightArrowIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path
@@ -35,50 +35,51 @@ function ArrowRightIcon() {
 }
 
 function NewsSection() {
-  const sliderRef = useRef(null);
+  const sliderBoxRef = useRef(null);
 
-  const scrollLeft = () => {
-    sliderRef.current?.scrollBy({ left: -320, behavior: "smooth" });
-  };
+  function moveLeft() {
+    sliderBoxRef.current?.scrollBy({ left: -320, behavior: "smooth" });
+  }
 
-  const scrollRight = () => {
-    sliderRef.current?.scrollBy({ left: 320, behavior: "smooth" });
-  };
+  function moveRight() {
+    sliderBoxRef.current?.scrollBy({ left: 320, behavior: "smooth" });
+  }
 
   return (
-    <section className="news-section">
-      <h2 className="news-section__title">NYHEDER</h2>
+    <section className="news-box">
+      <h2 className="news-title">NYHEDER</h2>
 
-      <div className="news-section__slider-wrap">
+      <div className="slider-wrap">
         <button
-          className="news-section__arrow news-section__arrow--left"
+          className="arrow-button arrow-left"
           type="button"
-          onClick={scrollLeft}
+          onClick={moveLeft}
           aria-label="Forrige produkter"
         >
-          <ArrowLeftIcon />
+          <LeftArrowIcon />
         </button>
 
-        <div className="news-section__slider" ref={sliderRef}>
-          {products.map((product) => (
-            <div className="news-section__item" key={product.id}>
+        <div className="slider-box" ref={sliderBoxRef}>
+          {productsList.map((oneProduct) => (
+            <div className="slider-item" key={oneProduct.id}>
               <ProductCard
-                image={product.image}
-                title={product.title}
-                price={product.price}
-                colors={product.colors}
+                id={oneProduct.id}
+                image={oneProduct.image}
+                title={oneProduct.title}
+                price={oneProduct.price}
+                colors={oneProduct.colors || []}
               />
             </div>
           ))}
         </div>
 
         <button
-          className="news-section__arrow news-section__arrow--right"
+          className="arrow-button arrow-right"
           type="button"
-          onClick={scrollRight}
+          onClick={moveRight}
           aria-label="Næste produkter"
         >
-          <ArrowRightIcon />
+          <RightArrowIcon />
         </button>
       </div>
     </section>

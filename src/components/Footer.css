@@ -2,32 +2,32 @@
     box-sizing: border-box;
 }
 
-.footer {
+.footer-area {
     width: 100%;
     margin: 0;
-    background: #efefef;
+    background-color: #efefef;
 }
 
-.footer__inner {
+.footer-content {
     width: 100%;
-    background: #403736;
-    color: #f5f1ee;
+    padding: 28px 72px 20px;
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr 1fr;
     gap: 56px;
-    padding: 28px 72px 20px;
+    background-color: #403736;
+    color: #f5f1ee;
 }
 
-.footer__column {
+.footer-column {
     display: flex;
     flex-direction: column;
 }
 
-.footer__column--newsletter {
+.newsletter-box {
     max-width: 360px;
 }
 
-.footer__eyebrow {
+.top-text {
     margin: 0 0 10px;
     font-size: 13px;
     letter-spacing: 1px;
@@ -35,7 +35,7 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer__heading {
+.big-text {
     margin: 0 0 18px;
     font-size: 18px;
     line-height: 1.3;
@@ -43,21 +43,21 @@
     color: #ffffff;
 }
 
-.footer__title {
+.column-title {
     margin: 0 0 16px;
     font-size: 17px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.footer__group {
+.footer-info-box {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin-bottom: 18px;
 }
 
-.footer__subtitle {
+.footer-small-title {
     margin: 0;
     font-size: 13px;
     font-weight: 600;
@@ -66,8 +66,8 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer__text,
-.footer__link {
+.footer-item-text,
+.footer-item-link {
     margin: 0;
     font-size: 15px;
     line-height: 1.35;
@@ -75,16 +75,16 @@
     text-decoration: none;
 }
 
-.footer__link:hover {
+.footer-item-link:hover {
     text-decoration: underline;
 }
 
-.footer__button {
+.sign-button {
     width: 270px;
     max-width: 100%;
     height: 42px;
     border: 1px solid rgba(255, 255, 255, 0.55);
-    background: transparent;
+    background-color: transparent;
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
@@ -92,30 +92,6 @@
     cursor: pointer;
 }
 
-.footer__button:hover {
-    background: rgba(255, 255, 255, 0.06);
-}
-
-@media (max-width: 1100px) {
-    .footer__inner {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        padding: 28px 32px 24px;
-    }
-}
-
-@media (max-width: 680px) {
-    .footer {
-        padding: 16px;
-    }
-
-    .footer__inner {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 24px 20px;
-    }
-
-    .footer__button {
-        width: 100%;
-    }
+.sign-button:hover {
+    background-color: rgba(255, 255, 255, 0.06);
 }

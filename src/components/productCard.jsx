@@ -1,6 +1,7 @@
 import "./productCard.css";
+import { Link } from "react-router-dom";
 
-function HeartIcon() {
+function HeartSvg() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path
@@ -14,7 +15,7 @@ function HeartIcon() {
   );
 }
 
-function BagIcon() {
+function BagSvg() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path
@@ -35,41 +36,45 @@ function BagIcon() {
   );
 }
 
-function ProductCard({ image, title, price, colors = [] }) {
+function ProductCard({ id, image, title, price, colors = [] }) {
   return (
-    <article className="product-card">
-      <div className="product-card__image-wrap">
-        <img className="product-card__image" src={image} alt={title} />
+    <article className="card-box">
+      <div className="pic-wrap">
+        <Link className="pic-link" to={`/product/${id}`}>
+          <img className="pic" src={image} alt={title} />
+        </Link>
 
         <button
-          className="product-card__favorite"
+          className="fav-btn"
           type="button"
           aria-label={`Tilføj ${title} til favoritter`}
         >
-          <HeartIcon />
+          <HeartSvg />
         </button>
       </div>
 
-      <div className="product-card__content">
-        <h3 className="product-card__title">{title}</h3>
+      <div className="info-box">
+        <Link className="name-link" to={`/product/${id}`}>
+          <h3 className="name-text">{title}</h3>
+        </Link>
 
-        <div className="product-card__price-row">
-          <p className="product-card__price">{price}</p>
+        <div className="price-box">
+          <p className="price-text">{price}</p>
 
           <button
-            className="product-card__bag"
+            className="bag-btn"
             type="button"
             aria-label={`Læg ${title} i kurven`}
           >
-            <BagIcon />
+            <BagSvg />
           </button>
         </div>
 
-        <div className="product-card__colors" aria-label="Farver">
+        <div className="dot-row" aria-label="Farver">
           {colors.map((color, index) => (
             <span
               key={`${color}-${index}`}
-              className="product-card__color"
+              className="dot"
               style={{ backgroundColor: color }}
             />
           ))}

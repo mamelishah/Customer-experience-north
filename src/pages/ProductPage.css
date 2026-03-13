@@ -1,0 +1,238 @@
+
+* {}
+
+.page-box {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 28px 36px;
+    background-color: #efefef;
+
+    display: grid;
+    grid-template-columns: minmax(320px, 620px) minmax(300px, 420px);
+    gap: 100px;
+    align-items: start;
+}
+
+.left-box {
+    width: 100%;
+}
+
+.image-box {
+    position: relative;
+    width: 100%;
+    height: 760px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #111;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-left {
+    left: 12px;
+}
+
+.arrow-right {
+    right: 12px;
+}
+
+.arrow-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.right-box {
+    width: 100%;
+    max-width: 420px;
+    padding-top: 12px;
+}
+
+.title-text {
+    margin-left: -5px;
+    font-size: 4rem;
+    line-height: 0.98;
+    font-weight: 400;
+    color: #111;
+    text-align: left;
+}
+
+.price-text {
+    margin: 0 0 14px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.small-text {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #111;
+}
+
+.color-box {
+    margin: 18px 0;
+}
+
+.label-text {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #111;
+}
+
+.color-list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.color-dot {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #444;
+    border-radius: 50%;
+}
+
+.size-box {
+    margin-bottom: 18px;
+}
+
+.size-select {
+    width: 100%;
+    max-width: 285px;
+    height: 44px;
+    padding: 0 14px;
+
+    border: 1px solid #6f6f6f;
+    background-color: transparent;
+    color: #111;
+    font-size: 0.98rem;
+    outline: none;
+}
+
+.button-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 34px;
+}
+
+.cart-button {
+    width: 245px;
+    height: 44px;
+    border: none;
+
+    background-color: #041a2b;
+    color: #fff;
+    font-size: 0.98rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.heart-button {
+    width: 34px;
+    height: 34px;
+    border: none;
+
+    background-color: transparent;
+    color: #111;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-button svg {
+    width: 26px;
+    height: 26px;
+}
+
+.good-box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 34px;
+}
+
+.good-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #111;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.good-line svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.info-box {
+    border-top: 1px solid #8f8f8f;
+}
+
+.info-item {
+    border-bottom: 1px solid #8f8f8f;
+}
+
+.info-button {
+    width: 100%;
+    padding: 18px 0;
+    border: none;
+
+    background-color: transparent;
+    color: #111;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.info-text {
+    padding: 0 0 18px;
+    color: #444;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.not-found-text {
+    padding: 40px 24px;
+    font-size: 1.4rem;
+    color: #111;
+}

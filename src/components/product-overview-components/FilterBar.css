@@ -1,0 +1,92 @@
+.filter-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 88px;
+    padding: 0 170px;
+
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.filter-button {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    font: inherit;
+    color: #111111;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filter-button svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.category-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.category-button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    font: inherit;
+    white-space: nowrap;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.active-button {
+    font-weight: 700;
+}
+
+.next-button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #111111;
+    cursor: pointer;
+}
+
+.next-button svg {
+    width: 18px;
+    height: 18px;
+}

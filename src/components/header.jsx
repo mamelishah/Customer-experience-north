@@ -1,14 +1,9 @@
-import "./header.css";
+import "./Header.css";
 import { useRef, useState } from "react";
 import CategoriesMegaMenu from "./CategoriesMegaMenu";
+import { Link } from "react-router-dom";
 
-const topItems = [
-  "Gratis fragt over 499kr",
-  "Levering 1-4 dage",
-  "Hurtig ombytning",
-];
-
-function SearchIcon() {
+function SearchSvg() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <circle
@@ -30,7 +25,7 @@ function SearchIcon() {
   );
 }
 
-function HeartIcon() {
+function HeartSvg() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path
@@ -44,7 +39,7 @@ function HeartIcon() {
   );
 }
 
-function BagIcon() {
+function BagSvg() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path
@@ -65,7 +60,7 @@ function BagIcon() {
   );
 }
 
-function UserIcon() {
+function UserSvg() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <circle
@@ -96,96 +91,115 @@ function UserIcon() {
 }
 
 function Header() {
-  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
-  const closeTimeoutRef = useRef(null);
+  const [showCategories, setShowCategories] = useState(false);
+  const timeoutRef = useRef(null);
 
-  const openCategoriesMenu = () => {
-    if (closeTimeoutRef.current) {
-      clearTimeout(closeTimeoutRef.current);
+  function openMenu() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
     }
-    setIsCategoriesOpen(true);
-  };
+    setShowCategories(true);
+  }
 
-  const closeCategoriesMenu = () => {
-    closeTimeoutRef.current = setTimeout(() => {
-      setIsCategoriesOpen(false);
+  function closeMenu() {
+    timeoutRef.current = setTimeout(() => {
+      setShowCategories(false);
     }, 180);
-  };
+  }
 
   return (
-    <header className="site-header-wrap">
-      <div className="site-header">
-        <div className="logo-box">
-          <span className="logo-text">NØRTH</span>
-        </div>
+    <header className="header-box">
+      <div className="header-content">
+        <Link className="header-logo-box" to="/">
+          <span className="header-logo-text">NØRTH</span>
+        </Link>
 
-        <div className="top-bar">
-          <div className="top-bar__messages">
-            {topItems.map((item, index) => (
-              <div className="top-bar__item-wrap" key={item}>
-                <span className="top-bar__item">{item}</span>
-                {index < topItems.length - 1 && (
-                  <span className="top-bar__divider" />
-                )}
-              </div>
-            ))}
+        <div className="header-top">
+          <div className="header-messages">
+            <div className="header-message-box">
+              <span className="header-message-text">
+                Gratis fragt over 499kr
+              </span>
+              <span className="header-line" />
+            </div>
+
+            <div className="header-message-box">
+              <span className="header-message-text">Levering 1-4 dage</span>
+              <span className="header-line" />
+            </div>
+
+            <div className="header-message-box">
+              <span className="header-message-text">Hurtig ombytning</span>
+            </div>
           </div>
 
-          <button className="country-button" type="button">
-            <span className="country-flag" aria-hidden="true" />
-            <span className="country-label">Denmark</span>
-            <span className="country-chevron" aria-hidden="true">
+          <button className="header-country-button" type="button">
+            <span className="header-flag" aria-hidden="true" />
+            <span className="header-country-text">Denmark</span>
+            <span className="header-arrow-down" aria-hidden="true">
               ▾
             </span>
           </button>
         </div>
 
-        <nav className="nav-bar">
-          <div className="nav-menu">
-            <button className="nav-link" type="button">
+        <nav className="header-nav">
+          <div className="header-links">
+            <button className="header-link" type="button">
               Nyheder
             </button>
 
             <div
-              className="nav-item-with-menu"
-              onMouseEnter={openCategoriesMenu}
-              onMouseLeave={closeCategoriesMenu}
+              className="header-menu-box"
+              onMouseEnter={openMenu}
+              onMouseLeave={closeMenu}
             >
-              <button className="nav-link" type="button">
+              <button className="header-link" type="button">
                 Kategorier
               </button>
 
-              <CategoriesMegaMenu isOpen={isCategoriesOpen} />
+              <CategoriesMegaMenu isOpen={showCategories} />
             </div>
 
-            <button className="nav-link" type="button">
-              Bestsellers
-            </button>
+            <Link className="header-link" to="/produkt-oversigt">
+              Bestseller
+            </Link>
 
-            <button className="nav-link" type="button">
+            <button className="header-link" type="button">
               Blog
             </button>
           </div>
 
-          <div className="nav-actions">
-            <button className="icon-button" type="button" aria-label="Søg">
-              <SearchIcon />
+          <div className="header-icons">
+            <button
+              className="header-icon-button"
+              type="button"
+              aria-label="Søg"
+            >
+              <SearchSvg />
             </button>
 
             <button
-              className="icon-button"
+              className="header-icon-button"
               type="button"
               aria-label="Favoritter"
             >
-              <HeartIcon />
+              <HeartSvg />
             </button>
 
-            <button className="icon-button" type="button" aria-label="Kurv">
-              <BagIcon />
+            <button
+              className="header-icon-button"
+              type="button"
+              aria-label="Kurv"
+            >
+              <BagSvg />
             </button>
 
-            <button className="icon-button" type="button" aria-label="Profil">
-              <UserIcon />
+            <button
+              className="header-icon-button"
+              type="button"
+              aria-label="Profil"
+            >
+              <UserSvg />
             </button>
           </div>
         </nav>
